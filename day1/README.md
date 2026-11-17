@@ -7,3 +7,8 @@
 ### HG repo 
 
 <img src="llm2.png">
+
+### Token concept in Model 
+
+<img src="llm3.png">
+
