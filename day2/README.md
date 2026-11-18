@@ -70,3 +70,12 @@ data centers. It's highly scalable and secure.
 ### some model sizing -- hardware need understanding 
 
 <img src="model2.png">
+
+### openai std or tool std to call the model 
+
+<img src="model3.png">
+
+
+### creating Virtual env in python on windwos vscode install openAI
+
+<img src="model4.png">
