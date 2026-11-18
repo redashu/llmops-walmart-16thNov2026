@@ -79,3 +79,9 @@ data centers. It's highly scalable and secure.
 ### creating Virtual env in python on windwos vscode install openAI
 
 <img src="model4.png">
+
+
+### Connecting ollama hosted model using python 
+
+<img src="model5.png">
+
