@@ -98,7 +98,7 @@ data centers. It's highly scalable and secure.
 
 ### Deploy model gguf format using docker container / TGI / llama.cpp
 
-````
+```
  35  mkdir -p ~/llama-cpu/models
    36  cd ~/llama-cpu/models
    37  curl -L   "https://huggingface.co/mfuntowicz/SmolLM2-360M-Instruct-Q4_K_M-GGUF/resolve/main/smollm2-360m-instruct-q4_k_m.gguf"   -o smollm2-360m-instruct-q4_k_m.gguf
@@ -108,5 +108,22 @@ data centers. It's highly scalable and secure.
    41  docker run -d   --name llama-cpu   --restart unless-stopped   --cpus=4   --memory=6g   -p 8080:8080   -v ~/llama-cpu/models:/models:ro   ghcr.io/ggml-org/llama.cpp:server   -m /models/smollm2-360m-instruct-q4_k_m.gguf   --host 0.0.0.0   --port 8080   -c 2048   -t 4
    42  docker ps
 
+
+```
+
+### curl to connect 
+
+``
+curl http://localhost:8080/v1/chat/completions   -H "Content-Type: application/json"   -d '{
+   46      "model": "SmolLM2-360M-Instruct",
+   47      "messages": [
+   48        {
+   49          "role": "user",
+   50          "content": "Explain LLMOps in simple terms with one enterprise example."
+   51        }
+   52      ],
+   53      "temperature": 0.7,
+   54      "max_tokens": 200
+   55    }'`
 
 ```
