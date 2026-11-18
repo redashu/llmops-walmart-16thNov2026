@@ -90,3 +90,23 @@ data centers. It's highly scalable and secure.
 --> GPU -- VRAM --(weight ,cache , token)
 
 <img src="model6.png">
+
+
+### Hugging face Model deployment options 
+
+<img src="model7.png">
+
+### Deploy model gguf format using docker container / TGI / llama.cpp
+
+````
+ 35  mkdir -p ~/llama-cpu/models
+   36  cd ~/llama-cpu/models
+   37  curl -L   "https://huggingface.co/mfuntowicz/SmolLM2-360M-Instruct-Q4_K_M-GGUF/resolve/main/smollm2-360m-instruct-q4_k_m.gguf"   -o smollm2-360m-instruct-q4_k_m.gguf
+   38  ls
+   39  ls -lh
+   40  ls -lh ~/llama-cpu/models/smollm2-360m-instruct-q4_k_m.gguf
+   41  docker run -d   --name llama-cpu   --restart unless-stopped   --cpus=4   --memory=6g   -p 8080:8080   -v ~/llama-cpu/models:/models:ro   ghcr.io/ggml-org/llama.cpp:server   -m /models/smollm2-360m-instruct-q4_k_m.gguf   --host 0.0.0.0   --port 8080   -c 2048   -t 4
+   42  docker ps
+
+
+```
