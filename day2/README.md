@@ -30,10 +30,10 @@ Azure is a cloud computing platform and set of services offered by Microsoft. It
 storage, networking, and analytics, allowing users to build, deploy, and manage applications and services through a global network of 
 data centers. It's highly scalable and secure.
 
-`
+
 ### history 
 
-````
+```
   1  apt update
     2  curl -fsSL https://ollama.com/install.sh | sh
     3  systemctl status ollama.service 
@@ -58,4 +58,15 @@ data centers. It's highly scalable and secure.
 
 <img src="pkg1.png">
 
+### model deployment / inferencing options 
 
+<img src="pkg2.png">
+
+
+### pulling model to local system using ollama 
+
+<img src="model1.png">
+
+### some model sizing -- hardware need understanding 
+
+<img src="model2.png">
