@@ -85,3 +85,8 @@ data centers. It's highly scalable and secure.
 
 <img src="model5.png">
 
+### Multi GPU support to deploymodel 
+
+--> GPU -- VRAM --(weight ,cache , token)
+
+<img src="model6.png">
