@@ -53,3 +53,9 @@ data centers. It's highly scalable and secure.
    17  ollama  ps
 
 ```
+
+### Model package 
+
+<img src="pkg1.png">
+
+
