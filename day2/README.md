@@ -113,7 +113,7 @@ data centers. It's highly scalable and secure.
 
 ### curl to connect 
 
-``
+```
 curl http://localhost:8080/v1/chat/completions   -H "Content-Type: application/json"   -d '{
    46      "model": "SmolLM2-360M-Instruct",
    47      "messages": [
@@ -127,3 +127,7 @@ curl http://localhost:8080/v1/chat/completions   -H "Content-Type: application/j
    55    }'`
 
 ```
+
+### Understanding RAG 
+
+<img src="model8.png">
