@@ -6,3 +6,7 @@
 
 [click](https://ollama.com/library)
 
+### Unsloth for running & fine tune the Model 
+
+[click](https://github.com/unslothai/unsloth)
+
