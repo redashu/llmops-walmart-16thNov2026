@@ -7,3 +7,8 @@
 ### revision process 2 
 
 <img src="rev2.png">
+
+### RAg process 
+
+<img src="rev3.png">
+
